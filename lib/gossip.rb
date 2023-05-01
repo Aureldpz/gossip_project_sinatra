@@ -14,6 +14,10 @@ class Gossip
     end
   end
 
+  def self.find(id)
+    CSV.read("./db/gossip.csv")[id.to_i]
+  end
+
   def self.all
     all_gossips = []
     CSV.read("./db/gossip.csv").each do |csv_line|

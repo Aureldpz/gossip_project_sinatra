@@ -4,13 +4,13 @@
   </head>
   <body>
   <h1>Bienvenue sur The Gossip Project !</h1>
-  <p>La liste des potins arrive bientôt.</p>
-  <p>En attendant, tu peux <a href="/gossips/new/">créer un nouveau potin</a>.</p>
+  <p>Tu peux <a href="/gossips/new/">créer un nouveau potin</a>.</p>
   <% gossips.each do |gossip| %>
     <p>
       <%= gossip.author %><br/>
       <%= gossip.content %>
     </p>
   <% end %>
+  
   </body>
 </html>
